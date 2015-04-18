@@ -1,28 +1,100 @@
+/*MAIN CSS*/
 body {
-	position: relative;
-	background-color: #fff;
+	background-color: white;
+	font-family: Roboto;
 }
 #map-canvas {
 	position: absolute;
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	height: 95%;
 	right: 0;
 	border-color: white;
 	border: 2px ridge transparent;
 	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
 }
+
+/* HOVER MASTER CONTROLS */
+ #map-functions {
+    position: absolute;
+    left: -280px;
+    cursor: pointer;
+
+    width: 300px;
+    background: white;
+    border: 5px ridge grey;
+    border-right: transparent;
+    height: 95%;
+    vertical-align: top;
+    z-index: 1;
+
+    /* ANIMATION */
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	width: 50%;
+}
+
+#map-functions:hover {
+    left:0;
+    /*on mouse over, we bring back its position*/
+}
+
+.navigation-guide {
+    float: right;
+    height: 100%;
+    vertical-align: top;
+    background: grey;
+    border: transparent;
+}
+
+.navigation-button {
+	position: relative;
+	padding: 5px;
+	height: 2rem;
+	width: 80%;
+}
+
+.navigation-button-image{
+	position: absolute;
+	width: 30%;
+	left: 0;
+	vertical-align: middle;
+}
+
+img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	vertical-align: middle;
+}
+.navigation-button-text{
+	position: absolute;
+	text-align: left;
+	width: 69%;
+	right: 0;
+	vertical-align: middle;
+}
+
+.left {
+    float:left;
+}
+
+/* MAP FUNCTIONS */ 
 #map-details {
 	position: absolute;
-	height: 100%;
-	left: 0;
-	width: 29%;
 	background-color: grey;
 	border: 1px ridge transparent;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
-#map-filter {
+#map-details-filter {
 	position: absolute;
 	right: 0;
 	left: 0;
@@ -30,9 +102,9 @@ body {
 	height: 30%;
 	background-color: white;
 	border: 1px ridge transparent;
-	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 6px 	rgba(0px, 0, 0, 0.3);
 }
-#map-list {
+#map-details-list {
 	position: absolute;
 	height: 70%;
 	bottom: 0;
@@ -62,12 +134,6 @@ body {
     text-overflow: ellipsis;
     width: 400px;
 }
-form {
-	font-family: Roboto;
-}
 form.legend {
 	font-style: bold;
-}
-select {
-	font-family: Roboto;
 }
