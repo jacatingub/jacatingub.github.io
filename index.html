@@ -1,69 +1,54 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<title> MetaNavagis - Restaurant </title>
+		<title>Knightmare Media Productions</title>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
-		<style> @import "cssfiles/Navagis.css"; </style>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
-		<script type="text/javascript" src="scripts/googleScript.java"></script>
+		<style> 
+			@import "css/main.css";
+			@import "css/loading.css";
+			@import "css/navigation.css"; 
+		</style>
+		<script type="text/javascript" src="scripts/main.javascript"></script>
 	</head>
 
-	<body>
-		<!-- LAYER 1 -->
-		<div id="map-functions"></a>
-			<nav>
-				<div class="navigation-button">
-					<div class="navigation-button-image"><img src="images/main_map_icon.png" width="25erm" height="25erm"></div>
-					<div class="navigation-button-text">Main Map</div>
-				</div>
-				
-				<div class="navigation-button">
-					<div class="navigation-button-image"><img src="images/search_icon.png" width="25erm" height="25erm"></div>
-					<div class="navigation-button-text">Search</div>
-				</div>
-				
-				<div class="navigation-button">
-					<div class="navigation-button-image"><img src="images/favorites_icon.png" width="25erm" height="25erm"></div>
-					<div class="navigation-button-text">Favorites</div>
-				</div>
-			</nav>
+	<body class="loaded">
 
-			<button class="navigation-guide">>></button> 			
+		<!-- LOADING DOES NOT WORK -->
+		<div id="loading-screen">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
 		</div>
 
-		<!-- LAYER 2-->
-		<div id="map-canvas"></div>
+		<!-- NAVIGATION -->
+		<div id="nav-functions"></a>
+			<nav>
+				<div class="nav-button">
+					<div class="nav-button-image"><img class="nav-image"src="media/logo/logo_black.png" width="25erm" height="25erm"></div>
+					<div class="nav-button-text">Master</div>
+				</div>
+				
+				<div class="nav-button">
+					<div class="nav-button-image"><img class="nav-image" src="images/favorites_icon.png" width="25erm" height="25erm"></div>
+					<div class="nav-button-text">About</div>
+				</div>
+
+				<div class="nav-button">
+					<div class="nav-button-image"><img class="nav-image" src="media/images/videos_icon.png" width="25erm" height="25erm"></div>
+					<div class="nav-button-text">Videos</div>
+				</div>
+				
+				<div class="nav-button">
+					<div class="nav-button-image"><img class="nav-image" src="images/favorites_icon.png" width="25erm" height="25erm"></div>
+					<div class="nav-button-text">3D Designs</div>
+				</div>
+			</nav>
+			<button class="nav-guide">>></button> 	
+		</div>
+
+		<!-- CONTENT -->
+		<div id="content">
+			<img id="main-logo" src="media/logo/logo_black.png">
+		</div>
 	</body>
-
 </html>
-
-<!--
-		
-
-		<div id="map-details">
-			<div id="map-details-filter">
-				<form>
-					<p style="text-align: center;">Search: <input type="text" placeholder="Where do you want to eat?" class="search" id="mapSearchBar" name="search" style="width: 70%; text-align: center;"></p>
-					<fieldset style="text-align: left;">
-						<legend style="text-align: left;">Filters</legend>
-						Type: <select name="eatType">
-								<option value="restaurants">Restaurants</option>
-								<option value="bars">Bars</option>
-								<option value="cafe">Cafe</option>
-							</select>
-						Sort by: <select name="sortType">
-								<option value="Prominence">Prominence</option>
-								<option value="Distance">Distance</option>
-							</select><br>
-						<p>Radial Search (km.): <input type="number" name="radius" style="width: 40%; text-align: center"></p>
-					</fieldset>
-				</form>
-			</div>
-			<div id="map-details-list">
-				<table id="resultsTable">
-					<tbody id="results">
-					</tbody>
-				</table>
-			</div>	
-		</div> -->

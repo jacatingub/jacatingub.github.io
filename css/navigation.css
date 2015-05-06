@@ -1,0 +1,78 @@
+
+/* NAVIGATION CONTROLS */
+ #nav-functions {
+    position: fixed;
+    left: -200px;
+    cursor: url('C:/wamp/www/Portfolio Website/media/cursor/E_SkullCursor_Small.ico'),default;
+
+    width: 220px;
+    background: white;
+    border: 5px solid grey;
+    border-right: transparent;
+    border-radius: 10px;
+    height: 96%;
+    vertical-align: top;
+    z-index: 1;
+
+    /* ANIMATION */
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+nav {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+#nav-functions:hover {
+    left:10;
+    /*on mouse over, we bring back its position*/
+}
+
+.nav-guide {
+    float: right;
+    height: 100%;
+    vertical-align: top;
+    background: grey;
+    border: transparent;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+}
+
+.nav-button {
+	position: relative;
+	padding: 5px;
+	height: 2rem;
+	width: 80%;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+}
+
+.nav-button-image{
+	position: absolute;
+	width: 30%;
+	left: 0;
+	vertical-align: middle;
+}
+
+.nav-image {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	vertical-align: middle;
+}
+.nav-button-text{
+	position: absolute;
+	text-align: left;
+	width: 69%;
+	right: 0;
+	vertical-align: middle;
+}
+/*.left {
+    float:left;
+}*/
