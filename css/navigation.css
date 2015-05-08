@@ -2,17 +2,16 @@
 /* NAVIGATION CONTROLS */
  #nav-functions {
     position: fixed;
-    left: -200px;
-    cursor: url('C:/wamp/www/Portfolio Website/media/cursor/E_SkullCursor_Small.ico'),default;
+    bottom: -80px;
 
-    width: 220px;
+    height: 100px;
     background: white;
     border: 5px solid grey;
-    border-right: transparent;
+    border-top: transparent;
     border-radius: 10px;
-    height: 96%;
-    vertical-align: top;
-    z-index: 1;
+    width: 50%;
+    margin-left: 25%;
+    z-index: 50;
 
     /* ANIMATION */
     transition: all 0.3s ease-in-out;
@@ -22,31 +21,39 @@
 }
 
 nav {
-	position: absolute;
-	left: 0;
-	width: 100%;
+	width: 80%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 
 #nav-functions:hover {
-    left:10;
+    bottom:10;
     /*on mouse over, we bring back its position*/
 }
 
 .nav-guide {
-    float: right;
-    height: 100%;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    float: top;
+    
     vertical-align: top;
     background: grey;
     border: transparent;
     border-top-right-radius: 5px; 
-    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .nav-button {
 	position: relative;
 	padding: 5px;
-	height: 2rem;
-	width: 80%;
+	height: 100%;
+	width: 20%;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .nav-button:hover {

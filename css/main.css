@@ -2,6 +2,7 @@
 body {
 	background-color: white;
 	font-family: Roboto;
+	cursor: url('C:/wamp/www/Portfolio Website/media/cursor/E_SkullCursor_Small.ico'),default;
 }
 
 /*CONTENT CSS*/
@@ -9,12 +10,17 @@ body {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	width: 98%;
+	width: 99%;
 	height: 98%;
-	right: 0;
 	border-color: white;
 	border: 2px ridge transparent;
-	box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+#logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: 95%;
+	width: 95%;
 }
 #main-logo {
 	display: block;
