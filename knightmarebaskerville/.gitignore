@@ -1,0 +1,12 @@
+.idea/
+
+#Ignore gulp build
+build/*
+
+#Ignore all npm builds
+client/node_modules/
+server/node_modules/
+
+#Ignore css map files - gulp-sass handles that
+client/styles/*.css.map
+client/styles/main.css

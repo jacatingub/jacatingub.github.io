@@ -1,0 +1,40 @@
+$WIDTH: 98.5%;
+
+*:focus {
+  outline: none;
+}
+
+body, body * {
+  font-family: 'Baskerville Old Face', 'Libre Baskerville', serif;
+}
+
+body {
+  position: relative;
+  width: $WIDTH;
+  height: 97.5vh;
+  top: 0;
+  left: 0;
+  float: left;
+}
+
+div {
+  display: block;
+  border-radius: 5px;
+  border: 2px solid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}

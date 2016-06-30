@@ -1,0 +1,24 @@
+{
+  "name": "knightmare-baskerville-server",
+  "version": "0.0.1",
+  "author": "John Aspen Parrilla Catingub <jacatingub@gmail.com>",
+  "description": "Portfolio Creator",
+  "repository": {
+    "type": "git",
+    "url": "https://JAKnight@bitbucket.org/JAKnight/knightmarebaskerville.git"
+  },
+  "keywords": [
+    "node",
+    "connect",
+    "serve-static"
+  ],
+  "engines": {
+    "node": "~6.2.1"
+  },
+  "dependencies": {
+    "connect": "~3.4.1",
+    "express": "~4.13.4"
+  },
+  "devDependencies": {
+  }
+}

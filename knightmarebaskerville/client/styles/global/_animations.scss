@@ -1,0 +1,183 @@
+/* ========================  NAV - OPEN ======================== */
+@include keyframes(orbit-out-to-right) {
+  0%   { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+  25%  { transform: rotate(90deg) translateX(40px) rotate(-90deg); }
+  50%  { transform: rotate(180deg) translateX(80px) rotate(-180deg); }
+  75%  { transform: rotate(270deg) translateX(120px) rotate(-270deg); }
+  100% { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-out-to-upper-right) {
+  0%   { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  25%  { transform: rotate(90deg) translateX(18.75px) translateY(-30px) rotate(-90deg); }
+  50%  { transform: rotate(180deg) translateX(37.5px) translateY(-60px) rotate(-180deg); }
+  75%  { transform: rotate(270deg) translateX(56.25px) translateY(-90px) rotate(-270deg); }
+  100% { transform: rotate(360deg) translateX(75px) translateY(-120px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-out-to-lower-right) {
+  0%   { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  25%  { transform: rotate(90deg) translateX(18.75px) translateY(30px) rotate(-90deg); }
+  50%  { transform: rotate(180deg) translateX(37.5px) translateY(60px) rotate(-180deg); }
+  75%  { transform: rotate(270deg) translateX(56.25px) translateY(90px) rotate(-270deg); }
+  100% { transform: rotate(360deg) translateX(75px) translateY(120px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-out-to-left) {
+  0%   { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+  25%  { transform: rotate(90deg) translateX(-40px) rotate(-90deg); }
+  50%  { transform: rotate(180deg) translateX(-80px) rotate(-180deg); }
+  75%  { transform: rotate(270deg) translateX(-120px) rotate(-270deg); }
+  100% { transform: rotate(360deg) translateX(-150px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-out-to-upper-left) {
+  0%   { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  25%  { transform: rotate(90deg) translateX(-18.75px) translateY(-30px) rotate(-90deg); }
+  50%  { transform: rotate(180deg) translateX(-37.5px) translateY(-60px) rotate(-180deg); }
+  75%  { transform: rotate(270deg) translateX(-56.25px) translateY(-90px) rotate(-270deg); }
+  100% { transform: rotate(360deg) translateX(-75px) translateY(-120px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-out-to-lower-left) {
+  0%   { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  25%  { transform: rotate(90deg) translateX(-18.75px) translateY(30px) rotate(-90deg); }
+  50%  { transform: rotate(180deg) translateX(-37.5px) translateY(60px) rotate(-180deg); }
+  75%  { transform: rotate(270deg) translateX(-56.25px) translateY(90px) rotate(-270deg); }
+  100% { transform: rotate(360deg) translateX(-75px) translateY(120px) rotate(-360deg); }
+}
+
+/* ========================  NAV - CLOSE ======================== */
+@include keyframes(orbit-in-from-right) {
+  100%  { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+  75%   { transform: rotate(90deg) translateX(40px) rotate(-90deg); }
+  50%   { transform: rotate(180deg) translateX(80px) rotate(-180deg); }
+  25%   { transform: rotate(270deg) translateX(120px) rotate(-270deg); }
+  0%    { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-in-from-upper-right) {
+  100%  { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  75%   { transform: rotate(90deg) translateX(18.75px) translateY(-30px) rotate(-90deg); }
+  50%   { transform: rotate(180deg) translateX(37.5px) translateY(-60px) rotate(-180deg); }
+  25%   { transform: rotate(270deg) translateX(56.25px) translateY(-90px) rotate(-270deg); }
+  0%    { transform: rotate(360deg) translateX(75px) translateY(-120px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-in-from-lower-right) {
+  100%  { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  75%   { transform: rotate(90deg) translateX(18.75px) translateY(30px) rotate(-90deg); }
+  50%   { transform: rotate(180deg) translateX(37.5px) translateY(60px) rotate(-180deg); }
+  25%   { transform: rotate(270deg) translateX(56.25px) translateY(90px) rotate(-270deg); }
+  0%    { transform: rotate(360deg) translateX(75px) translateY(120px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-in-from-left) {
+  100%  { transform: rotate(0deg) translateX(0px) rotate(0deg); }
+  75%   { transform: rotate(90deg) translateX(-40px) rotate(-90deg); }
+  50%   { transform: rotate(180deg) translateX(-80px) rotate(-180deg); }
+  25%   { transform: rotate(270deg) translateX(-120px) rotate(-270deg); }
+  0%    { transform: rotate(360deg) translateX(-150px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-in-from-upper-left) {
+  100%  { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  75%   { transform: rotate(90deg) translateX(-18.75px) translateY(-30px) rotate(-90deg); }
+  50%   { transform: rotate(180deg) translateX(-37.5px) translateY(-60px) rotate(-180deg); }
+  25%   { transform: rotate(270deg) translateX(-56.25px) translateY(-90px) rotate(-270deg); }
+  0%    { transform: rotate(360deg) translateX(-75px) translateY(-120px) rotate(-360deg); }
+}
+
+@include keyframes(orbit-in-from-lower-left) {
+  100%  { transform: rotate(0deg) translateX(0px) translateY(0px) rotate(0deg); }
+  75%   { transform: rotate(90deg) translateX(-18.75px) translateY(30px) rotate(-90deg); }
+  50%   { transform: rotate(180deg) translateX(-37.5px) translateY(60px) rotate(-180deg); }
+  25%   { transform: rotate(270deg) translateX(-56.25px) translateY(90px) rotate(-270deg); }
+  0%    { transform: rotate(360deg) translateX(-75px) translateY(120px) rotate(-360deg); }
+}
+/* ========================  SLIDE EFFECTS - MASTER NAV ======================== */
+// MASTER
+@include keyframes(master-slide-down-from-top) {
+  0%    { transform: translateY(-40px) translateX(-63px); opacity: 0; }
+  25%   { transform: translateY(-20px) translateX(-63px); opacity: 0; }
+  100%  { transform: translateY(40px) translateX(-63px); opacity: 1; }
+}
+
+@include keyframes(master-slide-down-from-mid) {
+  0%    { transform: translateY(55px) translateX(-63px); opacity: 1; }
+  75%    { transform: translateY(97.5px) translateX(-63px); opacity: 0; }
+  100%  { transform: translateY(140px) translateX(-63px); opacity: 0; }
+}
+
+@include keyframes(master-slide-up-from-mid) {
+  0%    { transform: translateY(40px) translateX(-63px); opacity: 1; }
+  75%    { transform: translateY(-20px) translateX(-63px); opacity: 0; }
+  100%  { transform: translateY(-40px) translateX(-63px); opacity: 0; }
+}
+
+@include keyframes(master-slide-up-from-bot) {
+  0%    { transform: translateY(140px) translateX(-63px); opacity: 0; }
+  25%   { transform: translateY(97.5px) translateX(-63px); opacity: 0; }
+  100%  { transform: translateY(55px) translateX(-63px); opacity: 1; }
+}
+
+/* ========================  SLIDE EFFECTS - NAV ======================== */
+@include keyframes(slide-down-from-top) {
+  0%    { transform: translateY(-40px) translateX(-48px); opacity: 0; }
+  25%   { transform: translateY(-22.5px) translateX(-48px); opacity: 0; }
+  100%  { transform: translateY(30px) translateX(-48px); opacity: 1; }
+}
+
+@include keyframes(slide-down-from-mid) {
+  0%    { transform: translateY(44px) translateX(-48px); opacity: 1; }
+  75%   { transform: translateY(86px) translateX(-48px); opacity: 0; }
+  100%  { transform: translateY(100px) translateX(-48px); opacity: 0; }
+}
+
+@include keyframes(slide-up-from-mid) {
+  0%    { transform: translateY(30px) translateX(-48px); opacity: 1; }
+  75%   { transform: translateY(-22.5px) translateX(-48px); opacity: 0; }
+  100%  { transform: translateY(-40px) translateX(-48px); opacity: 0; }
+}
+
+@include keyframes(slide-up-from-bot) {
+  0%    { transform: translateY(100px) translateX(-48px); opacity: 0; }
+  25%   { transform: translateY(86px) translateX(-48px); opacity: 0; }
+  100%  { transform: translateY(44px) translateX(-48px); opacity: 1; }
+}
+
+
+/* ========================  FADE EFFECTS ======================== */
+
+@include keyframes(fade-in) {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+@include keyframes(fade-out) {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+@include keyframes(fade-to-left) {
+  0%   { transform: translateX(0px); opacity: 1}
+  25%  { transform: translateX(-40px); }
+  50%  { transform: translateX(-80px); opacity: 0.25}
+  75%  { transform: translateX(-120px); opacity: 0}
+  100% { transform: translateX(-150px); }
+}
+
+@include keyframes(fade-to-right) {
+  0%   { transform: translateX(0px); opacity: 1}
+  25%  { transform: translateX(40px); }
+  50%  { transform: translateX(80px); opacity: 0.25}
+  75%  { transform: translateX(120px); opacity: 0}
+  100% { transform: translateX(150px); }
+}
+
+
+  /* ========================  ROTATION EFFECTS ======================== */
+@include keyframes(spin) {
+  0%    { transform: rotate(0deg); }
+  100%  { transform: rotate(360deg);  }
+}

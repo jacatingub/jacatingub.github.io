@@ -1,0 +1,23 @@
+.loaderContainer {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+
+  .loader-text {
+    border: none;
+    width: 300px;
+    text-align: center;
+  }
+}
+
+.loader {
+  border: none;
+  border-radius: 50%;
+  @include animation-infinite(spin, 800ms, ease-in);
+
+  img {
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,20 @@
+<div class="no-border nav-container">
+
+    <div ng-click="vm.EVENTS.onClick.toggleNav()" id="NavMasterButton" class="nav nav-button nav-animate text-center">
+        <i class="nav-section {{vm.navMaster.class}} nav-icon-master"></i>
+        <span class="nav-section nav-label-master">{{vm.navMaster.label}}</span>
+    </div>
+
+    <ul ng-if="vm.isNavInitialized">
+        <li ng-repeat="nav in vm.navs track by $index">
+            <div class="nav nav-button-sub nav-animate text-center {{vm.EVENTS.retrieveNavButtonClass($index)}}"
+                 ng-click="vm.EVENTS.onClick.nav($index)">
+
+                <i class="nav-section nav-icon {{nav.class}}"></i>
+                <span class="nav-section nav-label">{{nav.label}}</span>
+
+            </div>
+        </li>
+    </ul>
+
+</div>

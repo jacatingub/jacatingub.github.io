@@ -1,0 +1,90 @@
+/* =========================== BOX-SHADOWS =========================== */
+@mixin box-shadow($h-shadow, $v-shadow, $blur, $spread, $color) {
+  -webkit-box-shadow: $h-shadow $v-shadow $blur $spread $color;
+  -moz-box-shadow:    $h-shadow $v-shadow $blur $spread $color;
+  -o-box-shadow:      $h-shadow $v-shadow $blur $spread $color;
+  box-shadow:         $h-shadow $v-shadow $blur $spread $color;
+}
+
+/* =========================== TRANSITIONS =========================== */
+@mixin transition($property, $duration, $mode) {
+  -webkit-transition: $property $duration $mode;
+  -moz-transition:    $property $duration $mode;
+  -o-transition:      $property $duration $mode;
+  transition:         $property $duration $mode;
+}
+
+/* =========================== ANIMATIONS =========================== */
+@mixin animation($animation, $duration, $mode) {
+  -webkit-animation:  $animation $duration $mode;
+  -moz-animation:     $animation $duration $mode;
+  -o-animation:       $animation $duration $mode;
+  animation:          $animation $duration $mode;
+}
+
+@mixin animation-infinite($animation, $duration, $mode) {
+  -webkit-animation:  $animation $duration $mode infinite;
+  -moz-animation:     $animation $duration $mode infinite;
+  -o-animation:       $animation $duration $mode infinite;
+  animation:          $animation $duration $mode infinite;
+}
+
+/* =========================== KEYFRAMES =========================== */
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+/* ======================= CUSTOM ANIMATIONS ======================= */
+@mixin orbit($inOrOut, $navNumber, $duration, $mode) {
+  @if $inOrOut == 'open' {
+    @if $navNumber == 0 {
+      @include animation(orbit-out-to-right, $duration, $mode);
+    }
+    @if $navNumber == 1 {
+      @include animation(orbit-out-to-left, $duration, $mode);
+    }
+    @if $navNumber == 2 {
+      @include animation(orbit-out-to-upper-right, $duration, $mode);
+    }
+    @if $navNumber == 3 {
+      @include animation(orbit-out-to-upper-left, $duration, $mode);
+    }
+    @if $navNumber == 4 {
+      @include animation(orbit-out-to-lower-right, $duration, $mode);
+    }
+    @if $navNumber == 5 {
+      @include animation(orbit-out-to-lower-left, $duration, $mode);
+    }
+
+  } @else {
+    @if $navNumber == 0 {
+      @include animation(orbit-in-from-right, $duration, $mode);
+    }
+    @if $navNumber == 1 {
+      @include animation(orbit-in-from-left, $duration, $mode);
+    }
+    @if $navNumber == 2 {
+      @include animation(orbit-in-from-upper-right, $duration, $mode);
+    }
+    @if $navNumber == 3 {
+      @include animation(orbit-in-from-upper-left, $duration, $mode);
+    }
+    @if $navNumber == 4 {
+      @include animation(orbit-in-from-lower-right, $duration, $mode);
+    }
+    @if $navNumber == 5 {
+      @include animation(orbit-in-from-lower-left, $duration, $mode);
+    }
+  }
+}
